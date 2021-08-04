@@ -10,5 +10,5 @@ class Person
     end
 end
 
-lady = Person.new("Sky", 28)
+lady = Person.new("Sky", 25)
 puts lady.party
