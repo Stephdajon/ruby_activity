@@ -1,12 +1,12 @@
 # encapsulation
 class Company
-  def initialize(salary, commission)
+  def initialize(salary, days_at_work)
     @salary = salary
-    @commission = commission
+    @days_at_work = days_at_work
   end
 
   def employee_income
-    @salary + @commission
+    @salary + @days_at_work
   end
 end
 

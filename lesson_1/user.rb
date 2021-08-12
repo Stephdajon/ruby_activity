@@ -21,14 +21,6 @@ class User
     
   end
 
-  def admin_login
-    login
-  end
-
-  def buyer_login
-    login
-  end
-
   protected
   def login
     puts "User logged in. IP address: #{ip_address}"
@@ -43,6 +35,10 @@ class Admin < User
     @change_password = change_password
   end
 
+  def admin_login
+    login
+  end
+
 end
 
 
@@ -51,6 +47,10 @@ class Buyer < User
   attr_writer :change_password
   def buyer_password (change_password)
     @change_password = change_password
+  end
+
+  def buyer_login
+    login
   end
   
 end
